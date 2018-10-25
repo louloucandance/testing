@@ -1,9 +1,9 @@
-package main.fr.ut2j.m1ice.ootesting;
 
-import java.util.Random;
 
 import static java.lang.Math.PI;
 import static java.lang.Math.atan;
+
+import java.util.Random;
 
 /**
  * A Basic point with double values.
@@ -59,7 +59,7 @@ public class MyPoint {
 	 * @param newY The new Y coordinate. Must be valid (not equal Double.NaN), otherwise nothing is done.
 	 */
 	public void setY(final double newY) {
-		x = newY;
+		y = newY;
 	}
 
 
@@ -180,7 +180,7 @@ public class MyPoint {
 	 */
 	public MyPoint centralSymmetry(final MyPoint centre) {
 		if(centre == null) throw new IllegalArgumentException();
-		return rotatePoint(centre, 2d * Math.PI);
+		return rotatePoint(centre, /*2d */ Math.PI);
 	}
 
 
